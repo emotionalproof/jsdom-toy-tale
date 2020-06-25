@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     postToy('http://localhost:3000/toys', newToy);
-    fetchToys()
+    // renderToy(newToy)
     const lastToyAdded = fetchToys()[-1]
     renderToy(lastToyAdded);
     form.reset()
